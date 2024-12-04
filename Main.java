@@ -41,12 +41,15 @@ public class Main
         displayExerciseStatus(goalAchieved);
         double averageSpeed = calculateAverageSpeed(totalExerciseTime, runningDistance + cyclingDistance);
         displayAverageSpeed(averageSpeed);
-    }
-    /***** OUTPUT SECTION *****/
+
+/***** OUTPUT SECTION *****/
     System.out.println("Welcome, " + userName + "!");
         System.out.println("Your age: " + age);
         System.out.printf("You've run %.1f km and cycled %.1f km today.%n", runningDistance, cyclingDistance);
         System.out.printf("Total exercise time: %.1f minutes%n", totalExerciseTime);
+
+    }
+    
   
   /***** STATIC METHODS *****/
   public static boolean checkExerciseGoal(double run, double cycle, double goal) {
